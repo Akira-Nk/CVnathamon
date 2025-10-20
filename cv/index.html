@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathamon's CV/Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#projects">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#activities">Activities</a>
+        <a href="#certificates">Certificates</a>
+        
+    </nav>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="card-container">
+            <div class="card" onclick="openModal('project-1-modal')">
+                <img src="cvvr.png" alt="Project 1 Preview">
+                <h3>CPE Virtual Tour & Game Activity</h3>
+                <p> CPE Virtual Tour & Game Activity เป็น Virtualที่ใช้แนะนำสาขาวิศวกรรมคอมพิวเตอร์และจะมีเกมมาให้เล่นในระหว่างที่เดินชมอยู่ในVirtual</p>
+            </div>
+         </div>
+    </section>
+
+     <section id="activities">
+        <h2>Activities</h2>
+        <div class="card-container">
+            <div class="card" onclick="openModal('activity-2-modal')">
+                <img src="cvcyber00.jpg" alt="AUTOMATION EXPO 2025">
+                <h3>Cyber Hackathon</h3>
+                <p>ระหว่างวันที่ 1-3 ธันวาคม 2567 เข้าร่วมการแข่งขันและอบรม Cyber Hackathon</p>
+            </div>
+
+            <div class="card" onclick="openModal('activity-3-modal')">
+                <img src="EXpro01.jpg" alt="AUTOMATION EXPO 2025">
+                <h3>AUTOMATION EXPO 2025</h3>
+                <p>วันที่ 19-20 มีนาคม 2568 เยี่ยมชมงาน “AUTOMATION EXPO 2025” และ “EEC Automation Park” ณ มหาวิทยาลัยบูรพา เพื่อศึกษาดูงานด้านระบบอัตโนมัติอุตสาหกรรมและหุ่นยนต์สมัยใหม่</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="card-container">
+            <div class="card" onclick="openModal('cert1-modal')">
+                <img src="certificate.jpg" alt="Certificate 1">
+                <h3>โครงการส่งเสริมการเรียนรู้หน้าที่พลเมืองดิจิทัล"อุ่นใจไซเบอร์"</h3>
+                <p>สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี เมื่อวันที่ 25 มกราคม พุทธศักราช 2567</p>
+            </div>
+            <div class="card" onclick="openModal('cert2-modal')">
+                <img src="Certificate00.jpg" alt="Certificate 1">
+                <h3>การอบรมเชิงปฏิบัติการหลักสูตร CONTAINER TECHNOLOGY (DOCKER, KUBERNETES)</h3>
+                <p>ได้รับจากสาขาวิศวกรรมคอมพิวเตอร์ เมื่อวันที่ 8-9 มีนาคม พ.ศ.2568</p>
+            </div>
+
+            <div class="card" onclick="openModal('cert3-modal')">
+                <img src="Certificate01.jpg" alt="Certificate 1">
+                <h3>การอบรมโครงการพัฒนาทักษะด้านความมั่นคงปลอดภัยทางไซเบอร์</h3>
+                <p>ได้รับจากสาขาวิศวกรรมคอมพิวเตอร์ เมื่อวันที่ 23 กรกฎาคม พ.ศ.2567</p>
+            </div>
+
+             <div class="card" onclick="openModal('cert4-modal')">
+                <img src="Certificate02.jpg" alt="Certificate 1">
+                <h3>การอบรมโครงการพัฒนาทักษะด้าน IoT และระบบอัตโนมัติ</h3>
+                <p>ได้รับจากสาขาวิศวกรรมคอมพิวเตอร์ เมื่อวันที่ 19 กรกฎาคม พ.ศ.2567</p>
+            </div>
+
+        <div class="card" onclick="openModal('cert5-modal')">
+                <img src="Certificate03.jpg" alt="Certificate 1">
+                <h3>Python Essentials 1</h3>
+                <p>ได้รับจาก CISCO. Academy เมื่อวันที่ 9 มีนาคม พ.ศ.2568</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <div id="project-1-modal" class="modal">
+        <div class="modal-content modal-content-large">
+            <span class="close" onclick="closeModal('prompt-go-modal')">&times;</span>
+            <div></div>
+            <div class="carousel">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide">
+                            <img class="carousel-image" src="cvvr2.png" alt="Main menu">
+                        </li>
+                        <li class="carousel-slide">
+                            <img class="carousel-image" src="game01.png" alt="game01">
+                        </li>
+                        <li class="carousel-slide">
+                            <img class="carousel-image" src="game02.png" alt="game02">
+                        </li>
+                    </ul>
+                </div>
+    
+                <button class="carousel-button carousel-button--left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button class="carousel-button carousel-button--right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+                </button>
+                <div class="carousel-nav">
+                    <button class="carousel-indicator current-slide"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                </div>
+            </div>
+    
+            <div class="project-details">
+                <h2>CPE Virtua Tour & Game Activity</h2>
+                <h3>คำอธิบาย</h3>
+                <p>
+                     Project CPE Virtual Tour & Game Activity เป็นการสร้างสรรค์ประสบการณ์ใหม่ที่นำเทคโนโลยีล้ำสมัยมายกระดับการเรียนรู้และการสำรวจ โดยใช้เทคโนโลยี ในการออกแบบการนำเสนอข้อมูลและสร้างประสบการณ์ที่น่าสนใจและสนุกสนาน กิจกรรมนี้ออกแบบมาเพื่อให้ผู้เข้าร่วมได้สัมผัสกับการสำรวจที่ทันสมัย มีปฏิสัมพันธ์ได้ และช่วยสร้างความเข้าใจเกี่ยวกับตึกสาขาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยราชภัฏพิบูลสงคราม
+                </p>
+    
+                <h3>หน้าที่ที่รับผิดชอบ (Game Developer)</h3>
+                <p>
+                    ได้รับหน้าที่ในการสร้างมินิเกมในVirtua Tourเพื่อเพิ่มความสนุกของการสำรวจสาขาวิศวกรรมคอมพิวเตอร์
+                        เกมที่สร้างมี2รูปแบบคือแบบแรกจะเป็นแนวPuzzleในรูปแบบของการต่อจิกซอ
+                        เกมที่2คือเกมถอดรหัสด้วยเลขBinaryเพิ่มเพิ่มความท้าทายจากเกมรูปแบบแรก
+                    ตัวเกมได้มีการเชื่อฐานข้อมูลMySQLเพื่อทำการเกมข้อมูลชื่อผู้เล่นละแสดงออกมาโชว์ในLeaderboard
+                </p>
+    
+                <h3>เทคโนโลยีที่ใช้</h3>
+                <div class="tech-stack">
+                    <img src="cvunity02.png" alt="UNITY" title="UNITY">
+                    <img src="cv3DVista.png" alt="3DVista" title="3DVista">
+                    <img src="cvvscode.png" alt="Visual Studio Code" title="Visual Studio Code">
+                    <img src="cvsql02.png" alt="MySQL" title="MySQL">
+                    <!-- <img src="cvpdf/Android_Studio.png" alt="Android-Studio-Emulater" title="Android-Studio-Emulater">
+                    <img src="cvpdf/python-logo.png" alt="python" title="python">
+                    <img src="cvpdf/Google_Sheets.png" alt="Google-Sheets" title="Google-Sheets"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="activity-2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('activity-2-modal')">&times;</span>
+            <h2>Cyber Hackathon</h2>
+            <div class="carousel">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide">
+                            <img class="carousel-image" src="cvcyber00.jpg" alt="Main menu">
+                        </li>
+                    </ul>
+                <!-- </div>
+                <button class="carousel-button carousel-button--left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button class="carousel-button carousel-button--right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+                </button>
+                <div class="carousel-nav">
+                    <button class="carousel-indicator current-slide"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>    
+                </div> -->
+            </div>
+            <p>ระหว่างวันที่ 1-3 ธันวาคม 2567 เข้าร่วมการแข่งขันและอบรม Cyber Hackathon</p>
+        </div>
+    </div>
+
+     <div id="activity-3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('activity-3-modal')">&times;</span>
+            <h2>AUTOMATION EXPO</h2>
+            <div class="carousel">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide">
+                            <img class="carousel-image" src="EXpro02.jpg" alt="Main menu">
+                        </li>
+                        <li class="carousel-slide">
+                            <img class="carousel-image" src="EXpro03.jpg" alt="game01">
+                        </li>
+                        <li class="carousel-slide">
+                            <img class="carousel-image" src="EXpro04.jpg" alt="game02">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-button carousel-button--left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button class="carousel-button carousel-button--right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+                </button>
+                <div class="carousel-nav">
+                    <button class="carousel-indicator current-slide"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>    
+                </div>
+            </div>
+            <p>วันที่ 19-20 มีนาคม 2568 เยี่ยมชมงาน “AUTOMATION EXPO 2025” และ “EEC Automation Park” ณ มหาวิทยาลัยบูรพา เพื่อศึกษาดูงานด้านระบบอัตโนมัติอุตสาหกรรมและหุ่นยนต์สมัยใหม่</p>
+        </div>
+    </div>
+        
+    <div id="cert1-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('cert1-modal')">&times;</span>
+            <h2>โครงการส่งเสริมการเรียนรู้หน้าที่พลเมืองดิจิทัล"อุ่นใจไซเบอร์"</h2>
+            <img src="certificate.jpg" alt="Certificate 1" style="width:100%;">
+            <!-- <a href="path/to/your-certificate1.pdf" class="button" download>Download PDF</a> -->
+        </div>
+    </div>
+    <div id="cert2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('cert2-modal')">&times;</span>
+            <h2>การอบรมเชิงปฏิบัติการหลักสูตร CONTAINER TECHNOLOGY (DOCKER, KUBERNETES)</h2>
+            <img src="Certificate00.jpg" alt="Certificate 1" style="width:100%;">
+            <!-- <a href="path/to/your-certificate1.pdf" class="button" download>Download PDF</a> -->
+        </div>
+    </div>
+    <div id="cert3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('cert3-modal')">&times;</span>
+            <h2>การอบรมโครงการพัฒนาทักษะด้านความมั่นคงปลอดภัยทางไซเบอร์</h2>
+            <img src="Certificate01.jpg" alt="Certificate 1" style="width:100%;">
+            <!-- <a href="path/to/your-certificate1.pdf" class="button" download>Download PDF</a> -->
+        </div>
+    </div>
+    <div id="cert4-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('cert4-modal')">&times;</span>
+            <h2>การอบรมโครงการพัฒนาทักษะด้าน IoT และระบบอัตโนมัติ</h2>
+            <img src="Certificate02.jpg" alt="Certificate 1" style="width:100%;">
+            <!-- <a href="path/to/your-certificate1.pdf" class="button" download>Download PDF</a> -->
+        </div>
+    </div>
+    <div id="cert5-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('cert5-modal')">&times;</span>
+            <h2>Python Essentials 1</h2>
+            <img src="Certificate03.jpg" alt="Certificate 1" style="width:100%;">
+            <!-- <a href="path/to/your-certificate1.pdf" class="button" download>Download PDF</a> -->
+        </div>
+    </div>
+    
+
+
+<div id="image-modal" class="modal">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+</div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
